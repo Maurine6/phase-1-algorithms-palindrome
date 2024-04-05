@@ -1,6 +1,14 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  for (let i = 0; i < word.length / 2; i++) {
+    const x = word.length - 1 - i;
+    
+    if (word[i] !== word[x]) return false;
+  }
+
+  return true;
 }
+isPalindrome("gogo");
 
 /* 
   Add your pseudocode here
